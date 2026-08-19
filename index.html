@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIOUS — Curated Products</title>
+    <!-- Importing fonts: Cormorant Garamond (for elegant serif headings & italics) and Inter (for clean sans-serif UI elements) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== SECTION 1: HEADER / NAVBAR ===================== -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <!-- Left: Logo -->
+                <a href="#" class="nav__logo">VARIOUS</a>
+
+                <!-- Mobile menu checkbox toggle -->
+                <input type="checkbox" id="menu-toggle" class="nav__checkbox" aria-label="Toggle menu">
+                <label for="menu-toggle" class="nav__hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <!-- Center: Nav Links -->
+                <ul class="nav__menu">
+                    <li><a href="#" class="nav__link active">Home</a></li>
+                    <li><a href="#" class="nav__link">Shop All</a></li>
+                    <li><a href="#" class="nav__link">New In</a></li>
+                    <li><a href="#" class="nav__link">Collections</a></li>
+                    <li><a href="#" class="nav__link">Sale</a></li>
+                    <li><a href="#" class="nav__link">About</a></li>
+                    <li><a href="#" class="nav__link">Journal</a></li>
+                    <li><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+
+                <!-- Right: Solid rounded square action placeholders from mockup -->
+                <div class="nav__icons">
+                    <div class="nav__icon-box"></div>
+                    <div class="nav__icon-box"></div>
+                    <div class="nav__icon-box"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===================== SECTION 2: HERO ===================== -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__grid">
+                    <!-- Left Column: Title & Text Content -->
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            You Are a<br>
+                            <span class="hero__title--italic">Various</span> Creator
+                        </h1>
+                        <p class="hero__text">Thoughtfully sourced pieces chosen for their character, quality and story. Explore a collection built around care and craftsmanship.</p>
+                        <a href="#" class="btn btn--dark">Shop Now &nbsp; ↗</a>
+                    </div>
+
+                    <!-- Right Column: Two Product Cards -->
+                    <div class="hero__products">
+                        <div class="product-card">
+                            <div class="product-card__media">
+                                <img src="D:\KickStart Digital\two product\img1.svg" alt="Ceramic Bowl" class="product-card__img">
+                                <button class="product-card__add-btn" aria-label="Add to cart">+</button>
+                            </div>
+                            <h3 class="product-card__title">Product Name</h3>
+                            <div class="product-card__price-badge">$120.00</div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__media">
+                                <img src="D:\KickStart Digital\two product\img2.svg" alt="Ceramic Vase" class="product-card__img">
+                                <button class="product-card__add-btn" aria-label="Add to cart">+</button>
+                            </div>
+                            <h3 class="product-card__title">Product Name</h3>
+                            <div class="product-card__price-badge">$95.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Indicators aligned to the right, under product cards -->
+                <div class="hero__slider-indicators">
+                    <span class="hero__indicator-line hero__indicator-line--active"></span>
+                    <span class="hero__indicator-line"></span>
+                    <span class="hero__indicator-line"></span>
+                </div>
+            </div>
+
+            <!-- Full-width Trust Bar spanning screen at bottom of Hero -->
+            <div class="trust-bar">
+                <div class="container">
+                    <div class="trust-bar__list">
+                        <div class="trust-bar__item">
+                            <span class="trust-bar__icon-box"></span>
+                            <span class="trust-bar__text">Quality Assured</span>
+                        </div>
+                        <div class="trust-bar__item">
+                            <span class="trust-bar__icon-box"></span>
+                            <span class="trust-bar__text">Handpicked Items</span>
+                        </div>
+                        <div class="trust-bar__item">
+                            <span class="trust-bar__icon-box"></span>
+                            <span class="trust-bar__text">Easy Returns</span>
+                        </div>
+                        <div class="trust-bar__item">
+                            <span class="trust-bar__icon-box"></span>
+                            <span class="trust-bar__text">Fast Shipping</span>
+                        </div>
+                        <div class="trust-bar__item">
+                            <span class="trust-bar__icon-box"></span>
+                            <span class="trust-bar__text">Secure Checkout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SECTION 4: FEATURED COLLECTIONS ===================== -->
+        <section class="collections">
+            <div class="container">
+                <div class="collections__header">
+                    <span class="tag">FEATURED COLLECTIONS</span>
+                    <div class="collections__tabs">
+                        <button class="collections__tab active">Moldavite</button>
+                        <button class="collections__tab">Jewellery</button>
+                        <button class="collections__tab">Collection 3</button>
+                    </div>
+                </div>
+
+                <!-- Carousel container -->
+                <div class="collections__carousel">
+                    <div class="collections__track">
+                        <!-- Product 1 (Active/With Plus Badge) -->
+                        <div class="product-card product-card--carousel">
+                            <div class="product-card__media">
+                                <img src="D:\KickStart Digital\collection\collection1.svg" alt="Cups Set" class="product-card__img">
+                                <button class="product-card__add-btn" aria-label="Add to cart">+</button>
+                            </div>
+                            <h3 class="product-card__title">Product Name</h3>
+                            <div class="product-card__price-badge">$120.00</div>
+                        </div>
+
+                        <!-- Product 2 (Grey Price Badge, No Plus Badge) -->
+                        <div class="product-card product-card--carousel">
+                            <div class="product-card__media">
+                                <img src="D:\KickStart Digital\collection\collection2.svg" alt="Crackle Bowl" class="product-card__img">
+                            </div>
+                            <h3 class="product-card__title">Product Name</h3>
+                            <div class="product-card__price-badge product-card__price-badge--gray">$85.00</div>
+                        </div>
+
+                        <!-- Product 3 (Grey Price Badge, No Plus Badge) -->
+                        <div class="product-card product-card--carousel">
+                            <div class="product-card__media">
+                                <img src="D:\KickStart Digital\collection\collection3.svg" alt="Green Plate" class="product-card__img">
+                            </div>
+                            <h3 class="product-card__title">Product Name</h3>
+                            <div class="product-card__price-badge product-card__price-badge--gray">$95.00</div>
+                        </div>
+
+                        <!-- Product 4 (Grey Price Badge, No Plus Badge) -->
+                        <div class="product-card product-card--carousel">
+                            <div class="product-card__media">
+                                <img src="D:\KickStart Digital\collection\collection4.svg" alt="Teapot" class="product-card__img">
+                            </div>
+                            <h3 class="product-card__title">Product Name</h3>
+                            <div class="product-card__price-badge product-card__price-badge--gray">$140.00</div>
+                        </div>
+
+                        <!-- Product 5 (Grey Price Badge, No Plus Badge) -->
+                        <div class="product-card product-card--carousel">
+                            <div class="product-card__media">
+                                <img src="D:\KickStart Digital\collection\collection 5.svg" alt="Vase" class="product-card__img">
+                            </div>
+                            <h3 class="product-card__title">Product Name</h3>
+                            <div class="product-card__price-badge product-card__price-badge--gray">$110.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress bar and grouped controls -->
+                <div class="collections__controls">
+                    <div class="collections__progress">
+                        <div class="collections__progress-bar"></div>
+                    </div>
+                    <div class="collections__nav-group">
+                        <button class="collections__nav-arrow" aria-label="Previous">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <a href="#" class="btn btn--dark btn--view-all">View All Products &nbsp; ↗</a>
+                        <button class="collections__nav-arrow" aria-label="Next">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SECTION 5: OUR PROMISE ===================== -->
+        <section class="promise">
+            <div class="container">
+                <div class="promise__grid">
+                    <!-- Left: Content details -->
+                    <div class="promise__content">
+                        <span class="tag tag--light">OUR PROMISE</span>
+                        <h2 class="promise__title">The Exact Piece You See Is the Piece You Receive</h2>
+                        <p class="promise__text">Every item is photographed clearly and listed with key details like origin, materials and condition, so you can shop with confidence.</p>
+                        <a href="#" class="btn btn--dark">Learn More &nbsp; ↗</a>
+                    </div>
+
+                    <!-- Right: Concentric circles with overlapping products -->
+                    <div class="promise__visual">
+                        <div class="promise__circles-backdrop">
+                            <span class="promise__circle-line"></span>
+                            <span class="promise__circle-line"></span>
+                            <span class="promise__circle-line"></span>
+                            <span class="promise__circle-line"></span>
+                            <span class="promise__circle-line"></span>
+                        </div>
+                        <div class="promise__img-frame promise__img-frame--top">
+                            <img src="D:\KickStart Digital\circle\circle1.svg">
+                        </div>
+                        <div class="promise__img-frame promise__img-frame--bottom">
+                            <img src="D:\KickStart Digital\circle\circle2.svg" alt="Stone plate mockup">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SECTION 6: HELP / GUIDE ===================== -->
+        <section class="guide">
+            <div class="container">
+                <div class="guide__grid">
+                    <!-- Left column Card -->
+                    <div class="guide__card">
+                        <div class="guide__card-icon">
+                           <img src="D:\KickStart Digital\Capa_1.svg" alt="">
+                        </div>
+                        <h2 class="guide__card-title">Not sure which one fits?</h2>
+                        <p class="guide__card-text">Send us a message with what you're looking for and we'll help you find the perfect match.</p>
+                        <a href="#" class="btn btn--dark">Get in Touch &nbsp; ↗</a>
+                    </div>
+
+                    <!-- Right column Steps Container -->
+                    <div class="guide__steps">
+                        <div class="guide__step">
+                            <div class="guide__step-media">
+                                <img src="D:\KickStart Digital\browse1.svg" alt="Pottery sculpture mockup" class="guide__step-img">
+                            </div>
+                            <div class="guide__step-info">
+                                <h3 class="guide__step-heading">1. Browse the range</h3>
+                                <p class="guide__step-desc">Explore the collection and find items that catch your eye.</p>
+                            </div>
+                        </div>
+                        <div class="guide__step">
+                            <div class="guide__step-media">
+                                <img src="D:\KickStart Digital\browse2.svg" alt="Clay vase mockup" class="guide__step-img">
+                            </div>
+                            <div class="guide__step-info">
+                                <h3 class="guide__step-heading">2. Share your preferences</h3>
+                                <p class="guide__step-desc">Tell us your style, budget or occasion and we'll narrow it down.</p>
+                            </div>
+                        </div>
+                        <div class="guide__step">
+                            <div class="guide__step-media">
+                                <img src="D:\KickStart Digital\browse3.svg" alt="Bowl mockup" class="guide__step-img">
+                            </div>
+                            <div class="guide__step-info">
+                                <h3 class="guide__step-heading">3. We'll guide you</h3>
+                                <p class="guide__step-desc">Get a personalised recommendation before you order.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SECTION 7: SCROLLING MARQUEE + CTA ===================== -->
+        <section class="cta">
+            <!-- Text Marquee -->
+            <div class="marquee">
+                <div class="marquee__track">
+                    <span class="marquee__text">EASY RETURNS</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">FAST SHIPPING</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">QUALITY ASSURED</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">HANDPICKED ITEMS</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">EASY RETURNS</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">FAST SHIPPING</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">QUALITY ASSURED</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">HANDPICKED ITEMS</span>
+                    <span class="marquee__bullet">•</span>
+                    
+                    <!-- Seamless loop duplicate -->
+                    <span class="marquee__text">EASY RETURNS</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">FAST SHIPPING</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">QUALITY ASSURED</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">HANDPICKED ITEMS</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">EASY RETURNS</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">FAST SHIPPING</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">QUALITY ASSURED</span>
+                    <span class="marquee__bullet">•</span>
+                    <span class="marquee__text">HANDPICKED ITEMS</span>
+                    <span class="marquee__bullet">•</span>
+                </div>
+            </div>
+
+            <!-- Content CTA Block -->
+            <div class="container">
+                <div class="cta__content">
+                    <div class="cta__left">
+                        <span class="cta__sub">VARIOUS &nbsp; · &nbsp; CURATED WITH CARE</span>
+                        <h2 class="cta__title">
+                            Shop<br>Various Creators
+                        </h2>
+                    </div>
+                    <div class="cta__right">
+                        <p class="cta__paragraph">Various is a curated collection of thoughtfully sourced products, chosen for quality, character and craftsmanship. Each item is clearly photographed and described so you always know exactly what you're getting.</p>
+                        <a href="#" class="btn btn--outline-light">SHOP NOW &nbsp; →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== SECTION 8: FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Column 1 -->
+                <div class="footer__column">
+                    <h4 class="footer__title">SHOP</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">New In</a></li>
+                        <li><a href="#">Bestsellers</a></li>
+                        <li><a href="#">On Sale</a></li>
+                        <li><a href="#">Gift Ideas</a></li>
+                        <li><a href="#">Coming Soon</a></li>
+                        <li><a href="#">Archive</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer__column">
+                    <h4 class="footer__title">COLLECTIONS</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Explore by Style</a></li>
+                        <li><a href="#">Natural Materials</a></li>
+                        <li><a href="#">Limited Editions</a></li>
+                        <li><a href="#">Bundles &amp; Sets</a></li>
+                        <li><a href="#">Gift Sets</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer__column">
+                    <h4 class="footer__title">COMPANY</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Quality Promise</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Journal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="footer__column">
+                    <h4 class="footer__title">HELP</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping &amp; Returns</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5 (Subscription Form) -->
+                <div class="footer__column footer__column--subscribe">
+                    <h4 class="footer__title">STAY IN TOUCH</h4>
+                    <p class="footer__subscribe-info">New arrivals, behind-the-scenes stories and exclusive offers — delivered straight to your inbox.</p>
+                    <form class="footer__subscribe-form" onsubmit="return false;">
+                        <input type="email" placeholder="your@email.com" class="footer__subscribe-input" aria-label="Email address">
+                        <button type="submit" class="footer__subscribe-btn">SUBSCRIBE</button>
+                    </form>
+                    <div class="footer__direct-contact">
+                        <p>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><path d="M22 6l-10 7L2 6"></path></svg>
+                            hello@various.com
+                        </p>
+                        <p>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            New Zealand
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer base row -->
+            <div class="footer__base">
+                <div class="footer__base-left">
+                    <span class="footer__lang-globe">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </span>
+                    <p class="footer__copyright-text">&copy; 2025 Various. All rights reserved.</p>
+                </div>
+                <div class="footer__policy-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="footer__social-links">
+                    <a href="#" class="footer__social-anchor" aria-label="Instagram">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-anchor" aria-label="Facebook">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-anchor" aria-label="Pinterest">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.19-.78 1.2-5.08 1.2-5.08s-.31-.61-.31-1.52c0-1.42.83-2.49 1.86-2.49.88 0 1.3.66 1.3 1.45 0 .88-.56 2.2-.85 3.42-.24 1.02.51 1.86 1.52 1.86 1.83 0 3.23-1.93 3.23-4.7 0-2.46-1.77-4.18-4.29-4.18-2.93 0-4.64 2.19-4.64 4.46 0 .88.34 1.83.77 2.35.08.1.1.19.07.29-.08.31-.25 1.02-.29 1.16-.05.19-.16.23-.36.14-1.35-.63-2.19-2.6-2.19-4.19 0-3.41 2.48-6.54 7.15-6.54 3.75 0 6.67 2.67 6.67 6.25 0 3.73-2.35 6.73-5.62 6.73-1.1 0-2.13-.57-2.48-1.24l-.68 2.58c-.24.94-.9 2.12-1.34 2.84A10 10 0 0 0 22 12c0-5.52-4.48-10-10-10z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
